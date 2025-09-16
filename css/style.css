@@ -1,0 +1,641 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: rgb(24, 24, 24);
+}
+
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+main {
+    width: 96%;
+    margin: auto;
+    overflow: auto;
+    border-top: solid rgb(186, 185, 185);
+
+}
+
+.left_section {
+    width: 20%;
+    float: left;
+    padding: 0 20px;
+
+}
+
+.mid_section {
+    width: 40%;
+    float: left;
+    padding: 0 16px;
+}
+
+.right_section {
+    Width: 40%;
+    float: right;
+    border-left: solid rgb(186, 185, 185);
+}
+
+
+.left_section article h3 {
+    border-bottom: solid gray;
+    width: 80%;
+    margin: 10px 0;
+}
+
+.left_section article h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.author {
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.author span {
+    color: red;
+}
+
+.left_section article ul li {
+    margin-bottom: 10px;
+    color: rgb(46, 46, 46);
+    list-style: square;
+}
+
+.left_section article>span {
+    color: rgb(75, 75, 75);
+    font-size: 0.8rem;
+}
+
+.left_section article>h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.mid_section h1 {
+    font-size: 2.4rem;
+}
+
+
+.mid_section .top {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.mid_section .stamp {
+    position: absolute;
+    bottom: 94px;
+    left: 107px;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left: 40px solid rgb(255, 255, 255);
+    position: absolute;
+    bottom: 100px;
+    left: 60px;
+}
+
+.mid_section video {
+    width: 100%;
+}
+
+.mid_section video+p {
+    color: gray;
+    font-size: 0.8rem;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.mid_section section+section h2 {
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin-top: 17px;
+    margin-bottom: 10px;
+}
+
+.mid_section section+section li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.mid_section section+section ul {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.mid_section section+section li:not(li:last-child) {
+    border-right: 0.7px solid gray;
+
+}
+
+.mid_section .snippet h3 {
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+.line {
+    border-top: 1px solid rgb(193, 193, 193);
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.mid_section .snippet img {
+    width: 20%;
+    padding: 5px;
+}
+
+.mid_section .snippet div {
+    float: left;
+    width: 80%;
+}
+
+.mid_section .snippet div a {
+    color: rgb(35, 93, 151);
+    text-decoration: none;
+    list-style: square;
+}
+
+.mid_section .snippet>p {
+    clear: both;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.mid_section .snippet>p span {
+    color: red;
+    font-weight: normal;
+}
+
+.opinion_page>h3:first-child {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: normal;
+    padding-top: 10px;
+}
+
+.opinion_page span {
+    color: gray;
+}
+
+.opinion_page img {
+    width: 0px;
+}
+
+.opinion_page section {
+    width: 50%;
+    float: left;
+    padding: 10px 0;
+    padding-left: 20px;
+}
+
+.opinion_page {
+    overflow: hidden;
+    border-bottom: 5px double rgb(186, 185, 185);
+    margin-bottom: 10px;
+}
+
+.opinion_page section>* {
+    float: left;
+
+}
+
+.opinion_page section img {
+    width: 20%;
+    position: relative;
+    top: 30px;
+}
+
+.opinion_page section div {
+    width: 75%;
+}
+
+.opinion_page section h3 {
+    font-size: 1.3rem;
+}
+
+.opinion_page section li {
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding-top: 5px;
+    /* list-style: inside; */
+}
+
+.opinion_page section ul {
+    margin: 10px 0;
+}
+
+.ads {
+    overflow: auto;
+}
+
+.ads section {
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+.ads img {
+    width: 60px;
+}
+
+.ads section:first-child {
+    border-right: 1px solid rgb(186, 185, 185);
+}
+
+.ads section+section div>* {
+    float: left;
+}
+
+.snippet+section {
+    clear: both;
+}
+
+.ads h3 {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.ads a {
+    text-decoration: none;
+
+}
+
+.scroll img {
+    width: 60px;
+}
+
+.scroll li {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(186, 185, 185);
+    border-bottom: 1px solid rgb(186, 185, 185);
+    margin: 0 10px;
+    padding: 20px 0;
+
+}
+
+.scroll span {
+    margin-right: 20px;
+}
+
+.scroll p {
+    padding: 0 40px;
+}
+
+
+header img {
+    width: 40%;
+    display: flex;
+    justify-self: center;
+}
+
+
+header ul {
+    display: flex;
+
+}
+
+header nav a {
+    text-decoration: none;
+}
+
+header li {
+    padding: 5px 10px;
+    list-style: none;
+}
+
+header nav li:last-of-type a {
+    color: gray;
+}
+
+header nav ul {
+    justify-content: center;
+    padding: 10px;
+    border-top: 3px solid black;
+}
+
+
+.info {
+    justify-content: center;
+
+    margin: 10px 0;
+}
+
+.info li:not(li:last-child) {
+    border-right: 1px solid rgb(170, 170, 170);
+
+}
+
+.info li {
+    padding: 0 20px;
+}
+
+.lang {
+    width: fit-content;
+    border-top: 1px solid rgb(187, 187, 187);
+    border-left: 1px solid rgb(187, 187, 187);
+    border-right: 1px solid rgb(187, 187, 187);
+    border-bottom: 5px solid white;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+
+}
+
+.langbox {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgb(187, 187, 187);
+}
+
+
+header .lmenu img {
+    width: 30px;
+    padding: 4px;
+
+}
+
+header .langbox {
+    position: relative;
+}
+
+header .lang {
+    position: absolute;
+    top: -31px;
+}
+
+header .lmenu {
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+header .rmenu {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.langbox {
+    clear: both;
+}
+
+.lmenu>* {
+    float: left;
+}
+
+.lmenu span {
+    /* margin-right: 30px ;
+    margin-left: 5px; */
+    font-size: 1rem;
+    padding: 4px;
+    font-weight: bold;
+}
+
+.lmenu form input {
+    border: 1px solid gray;
+    padding: 4px;
+    font-size: 1rem;
+    margin-left: 40px;
+}
+
+.lmenu form button {
+    background-color: white;
+    padding: 4px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.rmenu li:not(li:last-child) {
+    padding: 6px;
+    background-color: rgb(80, 113, 158);
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.rmenu li a {
+    text-decoration: none;
+    color: white;
+}
+
+.rmenu li img {
+    width: 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.snippet {
+    margin: 20px 0;
+    overflow: auto;
+}
+
+.short{
+    display: none;
+}
+
+/* //////////////////////////////////////////// */
+
+@media screen and (max-width: 1181px) {
+    .right_section {
+        float: none;
+        width: 100%;
+        clear: both;
+    }
+
+    header .sub {
+        display: none;
+    }
+
+    header .lang {
+        position: static;
+    }
+
+    .left_section {
+        width: 30%;
+        float: left;
+        padding: 0 20px;
+        margin: 30px 0;
+    }
+
+    .mid_section {
+        width: 70%;
+        float: left;
+        padding: 0 16px;
+    }
+
+    .left_section article h3 {
+        width: 100%;
+    }
+
+    .right_section {
+        border: none;
+    }
+}
+
+@media screen and (max-width: 811px) {
+
+    header nav {
+        display: none;
+    }
+
+    header img {
+        width: 80%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left_section {
+        float: none;
+        width: 100%;
+    }
+
+    .mid_section {
+        float: none;
+        width: 100%;
+        order: -1;
+    }
+
+    .opinion_page {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .opinion_page>section {
+        width: 100%;
+        float: none;
+    }
+
+    .opinion_page section img {
+        position: static;
+        padding-left: 10px;
+    }
+
+    .opinion_page>h3:first-child {
+        margin: 10px 0;
+        font-size: 1.6rem;
+    }
+
+    .left_section article h3 {
+        display: inline;
+    }
+
+    .mid_section h1 {
+        font-size: 2rem;
+    }
+
+    .arrow {
+        bottom: 91px;
+    }
+
+}
+
+@media screen and (max-width: 644px) {
+
+    .mid_section .snippet div {
+        float: none;
+    }
+
+    .mid_section .snippet img {
+        display: none;
+    }
+
+    .ads {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ads>section {
+        width: 100%;
+    }
+
+    .ads section:first-child {
+        border: none;
+    }
+
+    .mid_section section+section ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mid_section section+section li:not(li:last-child) {
+        border: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    img,
+    .arrow {
+        display: none;
+    }
+
+    .opinion_page section div,
+    .mid_section .snippet div {
+        width: 100%;
+    }
+
+    .scroll span {
+        margin: 0;
+    }
+
+    .mid_section .stamp {
+        position: absolute;
+        bottom: 136px;
+        left: 13px;
+    }
+
+    .mid_section h1 {
+        font-size: 1.2rem;
+    }
+
+    .lmenu form {
+        margin-top: 20px;
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 308px) {
+    .short{
+        display: block;
+    }
+    .long{
+        display: none;
+    }
+
+    .lmenu form button {
+    padding: 6px;
+    color: white;
+    border: 1px solid rgb(168, 168, 168);
+    border-left: none;
+    margin-left: -4px;
+    width: 30px;
+    background-image: url("../assets/search.png");
+    background-size: contain;
+    color: transparent;
+}
+}
